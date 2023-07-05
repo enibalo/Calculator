@@ -50,8 +50,7 @@ body{
     border: 2px solid #317773;
     font-size: larger;
     display:flex;
-    padding-right:10px;
-    padding-left:10px;
+    padding:10px;
     justify-content:right;
-    align-items:center;
+    align-items:end;
 }
