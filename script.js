@@ -32,3 +32,4 @@ function operate(num,operator,num2){
         divide(num,num2);
     }
 }
+
