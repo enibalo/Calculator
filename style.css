@@ -28,6 +28,7 @@ body{
     background-color:white;
     display:inline-flex;
     padding:20px;
+    width:52px;
     max-height:50px;
     justify-content:center;
     align-items:center;
@@ -39,12 +40,6 @@ body{
 
 .delete, .symbol{
     padding:16px;
-    min-height:26px;
-    min-width:48px;
-}
-
-.symbol{
-    min-height:28px;
 }
 
 .display{ 
