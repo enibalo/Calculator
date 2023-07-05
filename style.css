@@ -23,7 +23,7 @@ body{
     border-radius:4%;
 }
 
-.num,.delete, .symbol{
+.num,.delete, .symbol, .equal{
     box-sizing:border-box;
     background-color:white;
     display:inline-flex;
@@ -38,7 +38,7 @@ body{
     border-radius:7%;
 }
 
-.delete, .symbol{
+.delete, .symbol, .equal{
     padding:16px;
 }
 
@@ -48,5 +48,10 @@ body{
     background-color:rgb(236, 233, 233);
     margin:0px;
     border: 2px solid #317773;
- 
+    font-size: larger;
+    display:flex;
+    padding-right:10px;
+    padding-left:10px;
+    justify-content:right;
+    align-items:center;
 }
