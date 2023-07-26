@@ -1,16 +1,20 @@
 body{
     display:flex;
+    height:100%;
     text-align:center;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
+    margin:0px;
     
 }
 
 .heading{
+    
     margin-bottom:30px;
 }
 .calculator{
     align-self:center;
+    
     background-color:#959697;
     gap:30px;
     display: flex;
@@ -22,6 +26,7 @@ body{
     align-items:center;
     border: 2px solid grey;
     border-radius:2%;
+    
 }
 
 .num,.delete, .symbol, .equal{
@@ -60,3 +65,14 @@ button:active{
     align-items:end;
 }
 
+.footer{
+    margin:160px;
+    background-color:#E1E1E1;
+    padding:20px;
+    align-self:stretch;
+}
+
+a{
+    text-decoration:  none;
+    color:black;
+}
