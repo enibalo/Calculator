@@ -11,7 +11,7 @@ body{
 }
 .calculator{
     align-self:center;
-    background-color:#317773;
+    background-color:#959697;
     gap:30px;
     display: flex;
     flex-wrap:wrap;
@@ -20,7 +20,8 @@ body{
     padding:20px;
     justify-content:center;
     align-items:center;
-    border-radius:4%;
+    border: 2px solid grey;
+    border-radius:2%;
 }
 
 .num,.delete, .symbol, .equal{
@@ -42,15 +43,20 @@ body{
     padding:16px;
 }
 
+button:active{
+    background-color:rgb(211, 207, 207);
+}
 .display{ 
     width:300px;
     height:60px;
     background-color:rgb(236, 233, 233);
     margin:0px;
-    border: 2px solid #317773;
+    border: 2px solid grey;
+    border-radius: 2%;
     font-size: larger;
     display:flex;
     padding:10px;
     justify-content:right;
     align-items:end;
 }
+
