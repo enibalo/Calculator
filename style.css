@@ -1,18 +1,11 @@
 body{
-    display:flex;
-
     text-align:center;
-    flex-direction:column;
-    justify-content:space-between;
     margin:0px;
     padding:0px;
+    height:100%;
     
 }
 
-.heading{
-    
-    margin-bottom:30px;
-}
 .calculator{
     align-self:center;
     background-color:#959697;
@@ -68,14 +61,17 @@ button:active{
 .footer{
     background-color:#E1E1E1;
     padding:20px;
+    text-align:center;
+    position:fixed;
+    bottom:0;
     width:100%;
+    
 }
 
 .main{
     text-align:center;
-    padding:80px;
+    margin:100px 0px;
     display:flex;
-   
     justify-content:center;
 }
 
