@@ -1,4 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Belanosima");
+
+html,body{
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
 body{
+    font-family: "Belanosima", sans-serif;
     text-align:center;
     margin:0px;
     padding:0px;
@@ -6,9 +14,24 @@ body{
     
 }
 
+h1{ 
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+header{
+    width:100%;
+    padding:8px 16px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom: 1px solid gray;
+}
+
+/*Former color: #959697*/
 .calculator{
     align-self:center;
-    background-color:#959697;
+    background-color: #1B605A; 
     gap:30px;
     display: flex;
     flex-wrap:wrap;
@@ -17,14 +40,14 @@ body{
     padding:20px;
     justify-content:center;
     align-items:center;
-    border: 2px solid grey;
-    border-radius:2%;
+    border: 2px solid #1B605A;
+    border-radius:15px;
     
 }
 
 .num,.delete, .symbol, .equal{
     box-sizing:border-box;
-    background-color:white;
+    background-color: white;
     display:inline-flex;
     padding:20px;
     width:52px;
@@ -33,7 +56,7 @@ body{
     align-items:center;
     border-style: solid;
     border-width:2px;
-    border-color:grey;
+    border-color:aliceblue;
     border-radius:7%;
 }
 
@@ -47,9 +70,9 @@ button:active{
 .display{ 
     width:300px;
     height:60px;
-    background-color:rgb(236, 233, 233);
+    background-color: white;
     margin:0px;
-    border: 2px solid grey;
+    border: 2px solid aliceblue;
     border-radius: 2%;
     font-size: larger;
     display:flex;
@@ -58,9 +81,9 @@ button:active{
     align-items:end;
 }
 
-.footer{
-    background-color:#E1E1E1;
-    padding:20px;
+footer{
+    background-color: rgb(42 147 114);
+    padding:8px;
     text-align:center;
     position:fixed;
     bottom:0;
@@ -70,12 +93,76 @@ button:active{
 
 .main{
     text-align:center;
-    margin:100px 0px;
     display:flex;
-    justify-content:center;
+    justify-content:center; 
+    overflow: hidden;
+    height: 100%;
 }
 
 a{
     text-decoration:  none;
     color:black;
+}
+
+.green, #bottom-left, #top-right{
+    width: 400px;
+    height: 300px;
+    background-color: #1B6037;
+    border-radius: 25% 50%;
+    border-color:#1B6037;
+    border-width: 1px;
+    border-style: solid;
+    display:block;
+}
+
+#top-left{
+    position:relative;
+    left: -400px;
+    top: 32px;
+    background-color: #1B605A;
+    border-color:#1B605A;
+}
+
+#bottom-right{
+    position:relative;
+    height: 400px;
+    right: -400px;
+    bottom: -500px;
+}
+
+#top-right{
+    position:relative;
+    right: -225px;
+    top: -500px;
+    background-color: #21601B;
+    border-color:#21601B;
+}
+
+
+#bottom-left{
+    position:relative;
+    height: 400px;
+    left: -100px;
+    bottom: -300px;
+    border-radius: 55% 50%;
+}
+
+span{
+    margin-top: 8px;
+    content: "Try it out!";
+    color: grey;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.blob-container{
+    display: flex;
+    flex-direction: column;
 }
